@@ -1,0 +1,93 @@
+/* 
+* Maquetado mediante FlexBox
+* https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background: blue;
+}
+
+.nav {
+    background: tomato;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    flex-grow: 4;
+}
+
+.section {
+    background: green;
+    /* flex-grow: 0; */
+    /* flex-shrink: 0; */
+    flex-basis: 60%;
+}
+
+.aside {
+    background: yellow;
+}
+
+.footer {
+    background: red;
+}
+
+/* ********************************
+* * MENU
+******************************** */
+nav a {
+    display: flex;
+    /* flex-flow: row wrap; */
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+    background: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: tomato;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+nav li:hover .dropdown-menu>li {
+    top: 0;
+    display: block;
+}
+
+.dropdown-menu li {
+    display: none;
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* .dropdown-menu li:hover {
+    display: block;
+} */
