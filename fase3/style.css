@@ -9,36 +9,104 @@
     box-sizing: border-box;
 }
 
-.header {
-    background: blue;
+body {
+    padding: 0 10%;
 }
 
-.nav {
-    background: tomato;
+.header {
+    background: cornsilk;
+
+    border: 0px solid #000000;
+    margin: 10px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+.header>p {
+    margin: 0 20px;
+    color: #000000;
+    text-decoration: none;
+    font-family: "Freestyle Script";
+    font-size: 50px;
+}
+
+.header>p:hover {
+    font-weight: bold;
+}
+
+nav {
+    background: darkslategray;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+nav a {
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
 }
 
 .wrapper {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 
-.item {
-    flex-grow: 4;
-}
+.item {}
 
 .section {
-    background: green;
-    /* flex-grow: 0; */
-    /* flex-shrink: 0; */
-    flex-basis: 60%;
+    background: rgba(105, 105, 105, 0.13);
+    padding: 20px 40px;
+    margin: 0 10px 10px 10px;
+
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 65%;
+
+    border-radius: 10px;
+}
+
+article {
+    margin-bottom: 20px;
 }
 
 .aside {
-    background: yellow;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+}
+
+.igm-aside {
+    background: cornsilk;
+
+    margin: 0 10px 10px 0px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.frame {
+    background: cornsilk;
+
+    padding: 20px;
+    margin: 0 10px 10px 0px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
 }
 
 .footer {
-    background: red;
+    padding: 20px;
+    background: cornsilk;
+
+    margin: 0 10px 10px 10px;
+    border-radius: 10px;
 }
 
 /* ********************************
@@ -46,17 +114,12 @@
 ******************************** */
 nav a {
     display: flex;
-    /* flex-flow: row wrap; */
     justify-content: center;
     align-items: center;
-
-    color: #fff;
-    background: black;
-    text-decoration: none;
 }
 
 nav a:hover {
-    background: tomato;
+    background: green;
     color: #fff;
 }
 
@@ -86,6 +149,10 @@ nav li:hover .dropdown-menu>li {
     display: flex;
     flex-direction: column;
     width: 100%;
+    background: darkslategray;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 /* .dropdown-menu li:hover {
