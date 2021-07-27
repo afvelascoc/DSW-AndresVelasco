@@ -1,0 +1,77 @@
+header {
+    background: cornsilk;
+
+    border: 0px solid #000000;
+    margin: 10px 0;
+
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+header>p {
+    margin: 0 20px;
+    color: #000000;
+    text-decoration: none;
+    font-family: "Freestyle Script";
+    font-size: 50px;
+}
+
+header>p:hover {
+    font-weight: bold;
+}
+
+.navbar {
+    border-radius: 10px;
+}
+
+
+article {
+    background: rgba(105, 105, 105, 0.13);
+    margin: 20px 0;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+aside {
+    margin: 20px 0;
+}
+
+.igm-aside {
+    background: rgba(105, 105, 105, 0.13);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.frame {
+    background: rgba(105, 105, 105, 0.13);
+    border-radius: 10px;
+    padding: 20px 0;
+}
+
+.footer {
+    padding: 20px;
+    background: cornsilk;
+    /* margin: 0 10px 10px 10px; */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* change the background color */
+.navbar-custom {
+    background-color: darkslategray;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(255,255,255,.8);
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:focus .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+}

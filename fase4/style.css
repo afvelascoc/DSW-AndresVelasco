@@ -1,0 +1,152 @@
+/* 
+* Maquetado mediante FlexBox
+* https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0 5%;
+}
+
+.header {
+    background: cornsilk;
+
+    border: 0px solid #000000;
+    margin: 10px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+.header>p {
+    margin: 0 20px;
+    color: #000000;
+    text-decoration: none;
+    font-family: "Freestyle Script";
+    font-size: 50px;
+}
+
+.header>p:hover {
+    font-weight: bold;
+}
+
+nav {
+    background: darkslategray;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+nav a {
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.wrapper {
+    display: flex;
+
+    
+}
+
+.section {
+    background: rgba(105, 105, 105, 0.13);
+    padding: 20px 40px;
+    margin: 0 10px 10px 10px;
+    border-radius: 10px;
+
+    flex: 1;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+}
+
+.igm-aside {
+    background: cornsilk;
+
+    margin: 0 10px 10px 0px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.frame {
+    background: cornsilk;
+
+    padding: 20px;
+    margin: 0 10px 10px 0px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.footer {
+    padding: 20px;
+    background: cornsilk;
+
+    margin: 0 10px 10px 10px;
+    border-radius: 10px;
+}
+
+/* ********************************
+* * MENU
+******************************** */
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a:hover {
+    background: green;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+nav li:hover .dropdown-menu>li {
+    top: 0;
+    display: block;
+}
+
+.dropdown-menu li {
+    display: none;
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: darkslategray;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+img {
+    max-width:100%;
+}
+
+iframe {
+    max-width:100%;
+}
